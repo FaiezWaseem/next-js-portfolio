@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+ body {
+	 font-family: 'Source Sans Pro', sans-serif;
+	 font-size: 18px;
+}
+ a[href] {
+	 color: #000;
+}
+ .container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ .navbar {
+	 margin-top: 50px;
+}
+ .navbar .container {
+	 display: flex;
+	 align-items: center;
+}
+ .navbar .logo {
+	 font-size: 28px;
+	 text-transform: uppercase;
+	 letter-spacing: 3px;
+	 font-weight: 600;
+	 text-decoration: none;
+}
+ .navbar .nav-links {
+	 display: flex;
+	 margin-left: auto;
+	 list-style: none;
+}
+ .navbar .nav-links .nav-item {
+	 position: relative;
+	 display: inline-block;
+	 margin-left: 20px;
+	 margin-right: 20px;
+	 text-decoration: none;
+	 transition: opacity 0.3s;
+}
+ .navbar .nav-links .nav-item.active {
+	 font-weight: 700;
+}
+ .navbar .nav-links .nav-item.active:after {
+	 content: '';
+	 position: absolute;
+	 bottom: -10px;
+	 left: 0;
+	 width: 25px;
+	 height: 2px;
+	 background-color: #000;
+}
+ .navbar .nav-links .nav-item:hover {
+	 opacity: 0.5;
+}
+ .hero {
+	 padding-top: 100px;
+	 padding-bottom: 100px;
+}
+ .hero .container {
+	 display: flex;
+	 align-items: center;
+}
+ .hero .text-wrapper {
+	 width: 50%;
+}
+ .hero .text-wrapper.w-full {
+	 width: 100%;
+}
+ .hero .text-wrapper .title {
+	 font-size: 48px;
+	 margin-top: 0;
+	 margin-bottom: 10px;
+}
+ .hero .text-wrapper .description {
+	 font-size: 22px;
+	 line-height: 40px;
+}
+ .hero .text-wrapper .cta {
+	 display: inline-block;
+	 padding: 15px 45px;
+	 margin-top: 20px;
+	 background-color: #000;
+	 color: #fff;
+	 text-decoration: none;
+	 border-radius: 5px;
+	 transition: transform 0.3s;
+}
+ .hero .text-wrapper .cta:hover {
+	 transform: scale(1.1);
+}
+ .hero .image-wrapper {
+	 width: 50%;
+	 text-align: right;
+}
+ .portfolio-wrapper {
+	 display: flex;
+	 margin-left: -10px;
+	 margin-right: -10px;
+	 flex-wrap: wrap;
+	 justify-content: space-between;
+}
+ .portfolio-wrapper .portfolio-item {
+	 width: 40%;
+	 padding-left: 10px;
+	 padding-right: 10px;
+	 text-align: center;
+}
+ .portfolio-wrapper .portfolio-item .portfolio-image {
+	 max-width: 100%;
+}
+ .portfolio-wrapper .portfolio-item .portfolio-name {
+	 font-size: 24px;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 text-transform: capitalize;
+}
+ .portfolio-wrapper .portfolio-item .portfolio-category {
+	 color: #999;
+}
+ .contact-links {
+	 padding: 0;
+	 padding-left: 15px;
+	 margin-top: -10px;
+	 list-style: square;
+}
+ .contact-links .contact-item {
+	 padding-top: 10px;
+	 padding-bottom: 10px;
+}
+ 
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+      display: inline-block;
+      padding: 15px 45px;
+      margin-top: 20px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+      transform: translateX(10px);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .form-container {
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+  }
+.ham{
+	display: none;
+}
+.show{
+	display: flex !important;
+	animation-name: slide;
+	animation-duration: 4s;
+}
+@keyframes slide {
+	0%   {left:0px; top:0px;}
+	25%  { left:200px; top:0px;}
+	50%  { left:200px; top:200px;}
+	75%  { left:0px; top:200px;}
+	100% { left:0px; top:0px;}
+  }
+  @media screen and (max-width : 768px) {
+      .hero .container {
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      .hero .text-wrapper {
+          width: 90%;
+          height: 40%;
+      }
+      .hero .image-wrapper{
+          width: 70%;
+      }
+      .navbar .nav-links .nav-item {
+          font-size: 26px;
+      }
+      .navbar .logo{
+          font-size: 32px;
+      }
+	  .navbar .container{
+		  flex-wrap: wrap;
+	  }
+	  .portfolio-wrapper .portfolio-item {
+		  width: 100%;
+	  }
+  }
+
+  @media screen and (max-width : 468px) {
+	.ham{
+		display: block;
+	}
+	.navbar .nav-links{
+		margin-left: 0%;
+		display: none;
+	}
+	.navbar .nav-links{
+		flex-direction: column;
+	}
+  }
