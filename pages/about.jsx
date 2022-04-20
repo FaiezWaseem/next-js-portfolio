@@ -11,16 +11,38 @@ function About() {
 
 			<Navbar />
 
-			<section className="hero">
-			  <div className="container">
-			    <div className="text-wrapper w-full">
-			      <h1 className="title">About</h1>
-			      <p className="description">
-			      	Incididunt in cillum magna occaecat nisi qui in exercitation labore anim adipisicing amet irure tempor id pariatur nostrud labore nulla veniam sunt occaecat est officia ut cillum do eiusmod enim consequat nulla in ut esse irure ex commodo excepteur pariatur in consectetur consectetur in dolor aliqua ex sint minim dolore ut ea ad dolor est deserunt incididunt exercitation qui laboris ad do minim sunt elit occaecat excepteur deserunt sint sunt laboris dolore amet sit fugiat tempor reprehenderit laborum et irure commodo exercitation ea excepteur esse mollit ad nisi sit laboris dolore ad sunt eiusmod dolore do nisi id commodo in et aliqua sed ullamco ea id duis aliquip commodo qui sed aute ut aliqua.
-			      </p>
-		      </div>
-	      </div>
-			</section>
+			<section className="section skills sec-dis">
+        <h1 className="section-title">expertise</h1>
+        <p className="section-desc">I have handfull experience in following skills and still learning and practicing more and more.</p>
+        <div className="skill-container">
+            <div className="skill">
+                <i className="fas fa-palette"></i>
+                <h1>designer</h1>
+                <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                <h3>Things I enjoy designing</h3>
+                <p>UX, UI, Web, Mobile, Apps</p>
+            </div>
+            <div className="skill">
+                <i className="fas fa-laptop-code"></i>
+                <h1>developer</h1>
+                <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                <h3>Languages I speak</h3>
+                <p>Urdu , English</p>
+                <h3>Dev Tools</h3>
+                <p>Bootstrap, Firebase, VSCODE, Codepen, Github, Gitlab, Terminal</p>
+            </div>
+            <div className="skill">
+                <i className="fas fa-code"></i>
+                <h1>Coder</h1>
+                <p>I genuinely care about people, and love helping fellow designers work on their craft.</p>
+                <h3>Languages I Play around with</h3>
+                <p>HTML/CSS , JAVASCRIPT , REACT / NEXT JS , PHP , JAVA  , REACT NATIVE</p>
+                <h3>Design Tools</h3>
+                <p> Mockups
+                    Figma</p>
+            </div>
+        </div>
+    </section>
 		</>
 	);
 }

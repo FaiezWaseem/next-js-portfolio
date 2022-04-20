@@ -10,19 +10,7 @@ function Contact() {
 			</Head>
 
 			<Navbar />
-
-			<section className="hero">
-			  <div className="container">
-			    <div className="text-wrapper w-full">
-			      <h1 className="title">Contact</h1>
-			      <ul className="contact-links">
-			      	<li className="contact-item">Email: fazufaiez@gmail.com</li>
-			      	<li className="contact-item">Phone: +923161113521</li>
-			      </ul>
-		      </div>
 				  <Form />
-	      </div>
-			</section>
 		</>
 	);
 }
@@ -34,7 +22,7 @@ function Form(){
 
 	const onSubmit = (e) =>{
         e.preventDefault();
-		 if(e.target[0].value != "" && e.target[2].value != ""){
+		 if(e.target[0].value != "" && e.target[1].value != ""){
 			fetch(`/api/Mail?email=${e.target[0].value}&subject=${e.target[1].value}&message=${e.target[2].value}`)
 			.then(res => res.json())
 			.then(res => {
@@ -51,23 +39,21 @@ function Form(){
 
 	return (<>
 
-		<div className="form-container">
-	
-  <form  onSubmit={onSubmit}>
+     <div className="section contact sec-dis">
+        <h1 className="section-title">Contact</h1>
+        <p className="section-desc">Have a question or want to work together? Contact me now or send a email
+		 <a href="mailto:fazufaiez11@gmail.com">here</a>.</p>
+        <div className="contact-container">
 
-    <label htmlFor="fname">Email</label>
-    <input type="text" required id="email" name="firstname" placeholder="Your name.."/>
+            <form className="contact-form"  onSubmit={onSubmit}>
+                <input type="email" placeholder="Email Address"/>
+                <input type="text" placeholder="Subject"/>
+                <textarea name="message" placeholder="Message Here..."></textarea>
+                <button className="btn">Send</button>
+            </form>
 
-    <label htmlFor="lname">Subject</label>
-    <input type="text" required id="subject" name="lastname" placeholder="Your last name.."/>
-
-    <label htmlFor="subject">Message</label>
-    <textarea id="subject" required name="message" placeholder="Write something.." style={{ height : "200px"}}></textarea>
-
-    <input type="submit" name='submit' value="Submit"/>
-
-  </form>
-</div>
+            </div>
+            </div>
 	</>
 	)
 }

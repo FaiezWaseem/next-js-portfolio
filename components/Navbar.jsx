@@ -11,21 +11,27 @@ function Navbar({ router }) {
 
   return (
     <nav className="navbar">
-      <div className="container">
         <Link href="/"><a className="logo">Faiez Waseem.</a></Link>
           <div className='ham'  onClick={()=>{
                 document.getElementById("navlink").classList.toggle("show")
           }}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
           </div>
-        <ul className="nav-links" id='navlink'>
-          { navs.map(nav => (
-            <li><Link href={nav.href}><a className={`nav-item ${ router.pathname == nav.href ? 'active' : '' }`}>{nav.text}</a></Link></li>
-          )) }
+        <ul className="nav" >
+        <li><Link href={navs[0].href}><a className={`nav-btn1 ${ router.pathname == navs[0].href ? 'active' : '' }`}>{navs[0].text}</a></Link></li>
+        <li><Link href={navs[1].href}><a className={`nav-btn1 ${ router.pathname == navs[1].href ? 'active' : '' }`}>{navs[1].text}</a></Link></li>
+        <li><Link href={navs[2].href}><a className={`nav-btn1 ${ router.pathname == navs[2].href ? 'active' : '' }`}>{navs[2].text}</a></Link></li>
+        <li><Link href={navs[3].href}><a className={`nav-btn1 ${ router.pathname == navs[3].href ? 'active' : '' }`}>{navs[3].text}</a></Link></li>
+      
         </ul>
-      </div>
+        <i className="ham-btn fas fa-bars"  onClick={()=>{
+            const hamBtn = document.querySelector(".ham-btn");
+            const nav = document.querySelector(".nav");
+          nav.classList.toggle("dis");
+          document.body.classList.toggle("overflow");
+        }} ></i>
     </nav>
   );
 }
+
 
 export default withRouter(Navbar);
