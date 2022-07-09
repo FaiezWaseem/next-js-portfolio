@@ -1,30 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+Dark Mode:
+![Screen Shot 2021-07-19 at 15 08 55](https://user-images.githubusercontent.com/47287285/126173369-36ab5668-95b1-4e81-81b1-699a8ce129f6.png)
 
-First, run the development server:
+Blog Page:
+![Screen Shot 2021-07-19 at 15 07 45](https://user-images.githubusercontent.com/47287285/126173254-b30cafad-d757-4f5e-9a4e-f2c89b3657b2.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Music Page:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Project page:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![Screen Shot 2021-07-19 at 15 09 53](https://user-images.githubusercontent.com/47287285/126173594-1155459f-cc80-4dde-ad75-e2ee6444be94.png)
 
-## Learn More
+Light Mode:
+![Screen Shot 2021-07-19 at 15 08 51](https://user-images.githubusercontent.com/47287285/126173379-15e308d5-d7b0-483d-9b26-9fad4d8eec06.png)
 
-To learn more about Next.js, take a look at the following resources:
+Blog Page:
+![Screen Shot 2021-07-19 at 15 08 15](https://user-images.githubusercontent.com/47287285/126173289-bac6db05-ca91-4f08-b385-88b51e0a5a4d.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Project Page:
+![Screen Shot 2021-07-19 at 15 09 55](https://user-images.githubusercontent.com/47287285/126173542-d053cc93-0ddc-4c41-85a2-8c30ccf45431.png)
