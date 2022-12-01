@@ -1,10 +1,9 @@
 export const pinnedRepos: pinnedRepoType[] = [
   {
-    image:
-      'https://raw.githubusercontent.com/FaiezWaseem/PhotoGallery/main/e-commerce.PNG',
+    image: '/static/images/projects/e-commerce.PNG',
     name: 'E-commerce',
     deployedLink: 'https://my-react-e-commerce.herokuapp.com/',
-    stack: ['React', 'boostrap' , 'recoilJs'],
+    stack: ['React', 'boostrap', 'recoilJs'],
     id: 'e-commerce',
     longDescription:
       'A complete MultiVendor E-commerce App build With Modern Technology React Along With the UI Styling Library/framework Boostrap , with State Management Library RecoliJs',
@@ -20,8 +19,7 @@ export const pinnedRepos: pinnedRepoType[] = [
     id: `Ride&Share`,
     stack: ['react Native', 'Native Base'],
     name: `Ride & Share`,
-    image:
-      'https://raw.githubusercontent.com/FaiezWaseem/PhotoGallery/main/rideshare.jpg',
+    image: '/static/images/projects/rideshare.jpg',
     longDescription: `As the Fuel Prices are reaching All time high  , travaleing has gone really expensive , So here we present Ride&Share A Simple Easy To Use CarPooling App`,
   },
   {
@@ -29,9 +27,16 @@ export const pinnedRepos: pinnedRepoType[] = [
     stack: ['Javascript', 'FireBase'],
     name: `Video Point`,
     deployedLink: 'https://faiezwaseem.github.io/Video-Point/',
-    image:
-      'https://raw.githubusercontent.com/FaiezWaseem/PhotoGallery/main/videopoint.PNG',
+    image: '/static/images/projects/videopoint.PNG',
     longDescription: `One Of My First WebApp With Some Backend Tecnologies Like Firebase `,
+  },
+  {
+    image: '/static/images/projects/clubmonaco.PNG',
+    name: 'CLUB MONACO',
+    deployedLink: 'https://clubmonacosalon.com/',
+    stack: ['HTML', 'boostrap', 'PHP'],
+    id: 'clubmonaco',
+    longDescription: 'A client Project || A Saloon Website for my client',
   },
 ];
 
