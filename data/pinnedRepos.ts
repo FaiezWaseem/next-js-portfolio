@@ -38,6 +38,14 @@ export const pinnedRepos: pinnedRepoType[] = [
     id: 'clubmonaco',
     longDescription: 'A client Project || A Saloon Website for my client',
   },
+  {
+    image: '/static/images/projects/bannerfoodreciepe.png',
+    name: 'Food Reciepe App ui',
+    deployedLink: 'https://faiezwaseem.live/',
+    stack: ['React Native', 'Native Base', 'expo'],
+    id: 'foodreciepe',
+    longDescription: 'A food reciepe app made on react native ',
+  },
 ];
 
 export interface pinnedRepoType {
