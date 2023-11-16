@@ -46,6 +46,22 @@ export const pinnedRepos: pinnedRepoType[] = [
     id: 'foodreciepe',
     longDescription: 'A food reciepe app made on react native ',
   },
+  {
+    image: '/static/images/projects/flybnb.png',
+    name: 'Flybnb an AirBnb Clone',
+    deployedLink: 'https://github.com/FaiezWaseem/flybnb',
+    stack: ['React Native',  'Php' , 'Mysql'],
+    id: 'flybnb',
+    longDescription: 'Flybnb an AirBnb Clone app made on react native and Php Mysql',
+  },
+  {
+    image: '/static/images/projects/burgerlab.png',
+    name: 'BurgerLab Clone',
+    deployedLink: 'https://github.com/FaiezWaseem/flybnb',
+    stack: ['React Native',  'Firebase', 'expo'],
+    id: 'burgerlab',
+    longDescription: 'BurgerLab made on react native and Firebase',
+  },
 ];
 
 export interface pinnedRepoType {
